@@ -1,18 +1,11 @@
 .introducao-bg {
-  background-color: #000000;
-  box-shadow: inset 0 -120px #ffffff;
-  color: #ffffff;
+  background-color: var(--cor-12);
+  box-shadow: inset 0 -120px var(--cor-0);
 }
 .introducao {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: opx 40px;
-  box-sizing: border-box;
-  max-width: 1200px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  gap: 0px 40px;
 }
 .introducao-conteudo {
   align-self: end;
@@ -20,41 +13,22 @@
 }
 .introducao img {
   height: 100%;
+  width: 100%;
   object-fit: cover;
   border-radius: 4px;
 }
-.introducao-conteudo h1 {
-  font-weight: 600;
+.introducao h1 {
   margin-bottom: 32px;
-  font-size: 64px;
-  line-height: 1.125;
-  font-family: var(--p);
 }
 .introducao-conteudo p {
-  font-family: var(--r);
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.5;
-  color: #b3b2b2;
   margin-bottom: 20px;
 }
-.introducao-conteudo span {
-  color: #ffbb00;
-}
 
-@media (max-width: 1200px) {
-  .introducao h1 {
-    font-size: 48px;
-  }
-  .introducao p {
-    font-size: 18px;
-  }
-}
 @media (max-width: 800px) {
   .introducao-bg {
-    background-color: #111111;
+    background-color: var(--cor-11);
     padding-top: 40px;
-    box-shadow: inset 0 -60px #ffffff;
+    box-shadow: inset 0 -60px var(--cor-0);
   }
   .introducao {
     grid-template-columns: 1fr;
@@ -64,7 +38,6 @@
     padding: 0px;
   }
   .introducao h1 {
-    font-size: 32px;
     margin-bottom: 16px;
   }
   .introducao img {
