@@ -6,6 +6,7 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .link {
   display: inline-block;
   color: var(--p-1);
@@ -30,12 +31,28 @@
   padding: 16px 32px;
   border-radius: 4px;
   font: 600 1.125rem/1.35 var(--f1);
+  max-width: max-content;
 }
 .botao:hover {
   background: linear-gradient(#ffb60d, #e59317);
 }
+.secundario {
+  box-sizing: border-box;
+  display: inline-block;
+  color: var(--cor-0);
+  border: 2px solid var(--cor-0);
+  padding: 16px 32px;
+  border-radius: 4px;
+  font: 600 1.125rem/1.35 var(--f1);
+  max-width: max-content;
+}
+.secundario:hover {
+  color: var(--cor-3);
+  border: 2px solid var(--cor-3);
+}
 @media (max-width: 600px) {
-  .botao {
+  .botao,
+  .secundario {
     padding: 12px 16px;
     font-size: 1rem;
   }
